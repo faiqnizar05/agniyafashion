@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agniya Fashion - Data Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="./gambar/Agniya1.jpg">
+</head>
+<body>
+  <header>
+    <img src="Agniya1.jpg" alt="Logo Agniya Fashion" class="logo">
+    <div class="header-text">
+      <h1>Agniya Fashion</h1>
+      <p>Dashboard Data Spreadsheet</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 🔎 Search bar -->
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Cari data...">
+      <i class="fas fa-search"></i>
+    </div>
+
+    <!-- 🔗 Daftar Link Spreadsheet -->
+    <div class="links-container">
+      <a href="https://docs.google.com/spreadsheets/d/11eZXxwTdrKyczJGEDpw-4xIyDxON0ebMiF_IiblzGfI/edit?usp=sharing" class="link-card">
+        <i class="fas fa-money-bill-wave"></i>
+        Data Gaji Karyawan 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/12lkNQdRhwbq1Ssrqg7e60bJ6ApYT9KGwXCVnSqT5oO8/edit?usp=sharing" class="link-card">
+        <i class="fas fa-scissors"></i>
+        Data Potongan Bahan 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1PZO112H7vt8Ll9ofhvD1pSOVa7XAbgJx0qxF05MRdMA/edit?usp=sharing" class="link-card">
+        <i class="fas fa-shopping-cart"></i>
+        Data Pembelian 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1o71Dr5qj_rSC3fPi_XVlkFc2Dq6SiSvwPgrV3eIEZcE/edit?usp=sharing" class="link-card">
+        <i class="fas fa-store"></i>
+        Data Pasar Cideng 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1-nGHy4su78lrrrBcbJQ0Yc8-TWXVHBuzBGzZUM4YGNw/edit?usp=sharing" class="link-card">
+        <i class="fas fa-chart-line"></i>
+        Data Pemasukan 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1B-8TD6C4a47uxPOZZPGQkBL2Wq2asdal8B1VB72eOYY/edit?usp=sharing" class="link-card">
+        <i class="fas fa-undo"></i>
+        Data Return Shopee 2025
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1niTHEu7M8MNONqEtA1pU8Z8jkr-1wViZIcnetPilcGc/edit?usp=sharing" class="link-card">
+        <i class="fas fa-rotate-left"></i>
+        Data Return TikTok 2025
+      </a>
+    </div>
+
+    <!-- 📊 Iframe untuk tampilkan Spreadsheet -->
+    <div class="iframe-container">
+      <iframe id="spreadsheetFrame" src="" frameborder="0"></iframe>
+    </div>
+  </main>
+
+  <!-- 🔔 Modal Pilihan -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>Pilih cara membuka spreadsheet:</p>
+      <div class="modal-buttons">
+        <button id="openHere">Buka di Sini</button>
+        <button id="openOutside">Buka di Luar</button>
+        <button id="closeModal">Batal</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Agniya Fashion — Admin Dashboard</p>
+  </footer>
+</body>
+</html>
